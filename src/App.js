@@ -53,7 +53,7 @@ const App = () => {
         }}
       >
         {/* Sorry prof using react as a front end requires u to manually upload the txt file */}
-        <input type="file" onChange={handleFileChange} />
+        <input id="file-upload" type="file" onChange={handleFileChange} />
         <h2>Password:</h2>
         <input
           id="password-input"

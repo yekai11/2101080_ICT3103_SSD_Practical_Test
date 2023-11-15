@@ -1,14 +1,3 @@
-import groovy.json.JsonOutput
-
-def COLOR_MAP = [
-    'SUCCESS': 'good', 
-    'FAILURE': 'danger',
-]
-
-def getBuildUser() {
-    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
-}
-
 pipeline {
     agent any
     environment {
@@ -47,6 +36,7 @@ pipeline {
             }
             steps {
                 script{
+                    sh 'npm i'
                     sh 'npm ci'
 
                     dir("${env.WORKSPACE}"){

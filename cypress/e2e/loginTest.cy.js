@@ -37,8 +37,8 @@ describe("Search feature", () => {
 
   it("search with valid input and goes back to search page", () => {
     const password = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
-
-    cy.get('input[type="file"]').as("fileInput", { force: true });
+    const fileName = "../../10-million-password-list-top-10000.txt";
+    cy.get("#file-upload").attachFile(fileName, { force: true });
     cy.get("#password-input").type(`${password}`, { force: true });
     cy.get("#login-button").click({ force: true });
 
