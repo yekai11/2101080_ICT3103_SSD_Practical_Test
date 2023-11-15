@@ -52,10 +52,17 @@ const App = () => {
           alignItems: "center",
         }}
       >
+        {/* Sorry prof using react as a front end requires u to manually upload the txt file */}
         <input type="file" onChange={handleFileChange} />
         <h2>Password:</h2>
-        <input minLength={10} onChange={(e) => setPassword(e.target.value)} />
-        <button onClick={handleSubmit}>Login</button>
+        <input
+          id="password-input"
+          minLength={10}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button id="login-button" onClick={handleSubmit}>
+          Login
+        </button>
       </div>
     </div>
   );
