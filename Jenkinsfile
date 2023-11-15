@@ -45,6 +45,8 @@ pipeline {
 
                     sleep(time: 5, unit: 'SECONDS')
 
+                    sh 'npm ci'
+
                     sh 'npx cypress run --browser ${BROWSER} --spec cypress/e2e/${SPEC}'
                 }
                 
