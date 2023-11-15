@@ -37,8 +37,6 @@ pipeline {
             steps {
                 script{
                     sh 'npm i'
-                    sh 'npm ci'
-
                     dir("${env.WORKSPACE}"){
                         sh "pwd"
                     }
