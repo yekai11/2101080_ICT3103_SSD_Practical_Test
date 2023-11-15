@@ -11,3 +11,6 @@ NOTE: Sorry prof using react as a front end requires you to manually upload the 
 
 UI Testing:
 - I've utilised cypress as a frontend testing tool
+
+Git Server:
+- I did not upload the webapp i've made onto the local gitserver but instead it can be found on github: https://github.com/yekai11/2101080_ICT3103_SSD_Practical_Test
